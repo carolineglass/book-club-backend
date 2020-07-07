@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_books
   resources :user_clubs
   resources :book_clubs
   resources :clubs
