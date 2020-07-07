@@ -121,101 +121,101 @@ pachinko = Book.create(
 # CREATING THE BOOKS IN EACH CLUB 
 
 BookClub.create(
-    club_id: flatiron,
-    book_id: orwell, 
+    club: flatiron,
+    book: orwell, 
     active?: true
 )
 
 BookClub.create(
-    club_id: flatiron,
-    book_id: pachinko, 
+    club: flatiron,
+    book: pachinko, 
     active?: false
 )
 
 BookClub.create(
-    club_id: mystery_club,
-    book_id: crime, 
+    club: mystery_club,
+    book: crime, 
     active?: true
 )
 
 BookClub.create(
-    club_id: mystery_club,
-    book_id: thriller, 
+    club: mystery_club,
+    book: thriller, 
     active?: false
 )
 
 BookClub.create(
-    club_id: girls,
-    book_id: thriller, 
+    club: girls,
+    book: thriller, 
     active?: true
 )
 
 BookClub.create(
-    club_id: girls,
-    book_id: mockingbird, 
+    club: girls,
+    book: mockingbird, 
     active?: false
 )
 
 BookClub.create(
-    club_id: girls,
-    book_id: orwell, 
+    club: girls,
+    book: orwell, 
     active?: false
 )
 
 BookClub.create(
-    club_id: fiction,
-    book_id: orwell, 
+    club: fiction,
+    book: orwell, 
     active?: true
 )
 
 BookClub.create(
-    club_id: fiction,
-    book_id: mockingbird, 
+    club: fiction,
+    book: mockingbird, 
     active?: true
 )
 
 BookClub.create(
-    club_id: fiction,
-    book_id: pachinko, 
+    club: fiction,
+    book: pachinko, 
     active?: true
 )
 
 # CREATING USERS IN THE CLUB 
 
 UserClub.create(
-    user_id: caroline,
-    club_id: girls,
+    user: caroline,
+    club: girls,
     progress: 4
 )
 
 UserClub.create(
-    user_id: srishti,
-    club_id: girls,
+    user: srishti,
+    club: girls,
     progress: 6
 )
 
 UserClub.create(
-    user_id: jessica,
-    club_id: girls,
+    user: jessica,
+    club: girls,
     progress: 5
 )
 
 UserClub.create(
-    user_id: alice,
-    club_id: girls,
+    user: alice,
+    club: girls,
     progress: 9
 )
 
 UserClub.create(
-    user_id: rosie,
-    club_id: girls,
+    user: rosie,
+    club: girls,
     progress: 6
 )
 
 10.times do 
 UserClub.create(
-    user_id: User.all.sample.id,
-    club_id: Club.all.sample.id,
+    user: User.all.sample,
+    club: Club.all.sample,
     progress: rand(1..10)
 )
 end
@@ -226,8 +226,8 @@ boolean_array = [true, false]
 
 20.times do
 UserBook.create(
-    user_id: User.all.sample.id,
-    book_id: Book.all.sample.id, 
+    user: User.all.sample,
+    book: Book.all.sample, 
     read?: boolean_array.sample
 )
 end
