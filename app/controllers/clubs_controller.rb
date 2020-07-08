@@ -1,7 +1,7 @@
 class ClubsController < ApplicationController
     def index
         clubs = Club.all
-        render json: clubs, include: [:books, :users, :book_clubs]
+        render json: clubs, include: [:books, :users, :book_clubs, :user_clubs]
     end
     
     def create
@@ -9,12 +9,10 @@ class ClubsController < ApplicationController
         render json: club
     end
     
-    def edit
-    
-    end
-    
     def update
-    
+        club = Club.find(params[:id])
+        club.update(club_params)
+        render json: club
     end
 
     def destroy
@@ -26,6 +24,6 @@ class ClubsController < ApplicationController
     private
 
     def club_params
-        params.permit(:name, :image, :meeting)
+        params.permit(:name, :image, :meeting, :users)
     end
 end
