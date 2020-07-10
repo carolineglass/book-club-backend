@@ -21,19 +21,19 @@ BookClub.destroy_all
 
 # users
 
-srishti = User.create(name: "Srishti", image: "")
-caroline = User.create(name: "Caroline", image: "")
-eric = User.create(name: "Eric", image: "")
-jallen = User.create(name: "Jallen", image: "")
-meghann = User.create(name: "Meghann", image: "")
-joseph = User.create(name: "Joseph", image: "")
-jessica = User.create(name: "Jessica", image: "")
-josh = User.create(name: "Josh", image: "")
-rosie = User.create(name: "Rosie", image: "")
-don = User.create(name: "Don", image: "")
-alice = User.create(name: "Alice", image: "")
-sofia = User.create(name: "Sofia", image: "")
-james = User.create(name: "James", image: "")
+srishti = User.create(name: "Srishti", image: "", password: "abc123")
+caroline = User.create(name: "Caroline", image: "", password: "abc123")
+eric = User.create(name: "Eric", image: "", password: "abc123")
+jallen = User.create(name: "Jallen", image: "", password: "abc123")
+meghann = User.create(name: "Meghann", image: "", password: "abc123")
+joseph = User.create(name: "Joseph", image: "", password: "abc123")
+jessica = User.create(name: "Jessica", image: "", password: "abc123")
+josh = User.create(name: "Josh", image: "", password: "abc123")
+rosie = User.create(name: "Rosie", image: "", password: "abc123")
+don = User.create(name: "Don", image: "", password: "abc123")
+alice = User.create(name: "Alice", image: "", password: "abc123")
+sofia = User.create(name: "Sofia", image: "", password: "abc123")
+james = User.create(name: "James", image: "", password: "abc123")
 
 # clubs
 

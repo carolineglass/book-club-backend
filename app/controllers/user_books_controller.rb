@@ -1,8 +1,9 @@
 class UserBooksController < ApplicationController
+    before_action :authorized, only: [:create]
 
     def create
         newEntry = UserBook.create(user_book_params)
-        render json: newEntry.book
+        render json: newEntry
     end
     
     def update

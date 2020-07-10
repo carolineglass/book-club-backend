@@ -1,7 +1,7 @@
 class ClubsController < ApplicationController
     def index
         clubs = Club.all
-        render json: clubs, include: [:books, :users, :book_clubs, :user_clubs]
+        render json: clubs
     end
     
     def create
