@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+    before_action :authorized, only: [:create]
 
     def index
         books = Book.all
@@ -6,10 +7,6 @@ class BooksController < ApplicationController
     end
     
     def new
-    
-    end
-    
-    def create
     
     end
     

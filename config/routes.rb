@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   post '/users/login', to: 'users#login'
   get '/users/stay_logged_in', to: 'users#stay_logged_in'
+
+  # post '/books/add_to_wishlist', to: 'books#add_to_wishlist'
   resources :user_books
   resources :user_clubs
   resources :book_clubs
