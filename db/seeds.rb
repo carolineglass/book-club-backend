@@ -21,19 +21,19 @@ BookClub.destroy_all
 
 # users
 
-srishti = User.create(name: "Srishti", image: "https://i.ytimg.com/vi/rydz_pgY57k/maxresdefault.jpg", password: "abc123")
-caroline = User.create(name: "Caroline", image: "https://img1.looper.com/img/gallery/whatever-happened-to-meredith-from-the-office/intro-1526005235.jpg", password: "abc123")
-eric = User.create(name: "Eric", image: "https://ca-times.brightspotcdn.com/dims4/default/d7d4d55/2147483647/strip/true/crop/750x422+0+0/resize/750x422!/quality/90/?url=https%3A%2F%2Fwww.trbimg.com%2Fimg-5436b8c6%2Fturbine%2Fzap-the-office-michaels-worst-moments-pics-012", password: "abc123")
-jallen = User.create(name: "Jallen", image: "https://relevantmagazine.com/wp-content/uploads/2017/12/dwight.png", password: "abc123")
-meghann = User.create(name: "Meghann", image: "https://img1.looper.com/img/gallery/why-jim-halpert-should-have-been-fired-from-dunder-mifflin/intro-1565380589.jpg", password: "abc123")
-joseph = User.create(name: "Joseph", image: "https://img1.looper.com/img/gallery/the-reason-dwight-schrutes-office-spin-off-got-cancelled/intro-1565187393.jpg", password: "abc123")
-jessica = User.create(name: "Jessica", image: "https://i.pinimg.com/originals/90/2e/48/902e48fe3e0a0397fc3071eed941332f.jpg", password: "abc123")
-josh = User.create(name: "Josh", image: "https://i.pinimg.com/originals/79/54/65/795465e33d6c640c1997252905469984.jpg", password: "abc123")
-rosie = User.create(name: "Rosie", image: "https://i.pinimg.com/originals/e5/67/cc/e567cc9331491412a1e53e83c7766a1a.jpg", password: "abc123")
-don = User.create(name: "Don", image: "https://img.nbc.com/sites/nbcunbc/files/images/2013/11/12/oscar-500x500.jpg", password: "abc123")
-alice = User.create(name: "Alice", image: "https://effectivenerd.com/wp-content/uploads/2019/05/Creed-Bratton-Quotes.png", password: "abc123")
-sofia = User.create(name: "Sofia", image: "https://img.buzzfeed.com/buzzfeed-static/static/2020-01/22/22/asset/2262703cf38d/sub-buzz-1828-1579733623-9.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto&output-quality=auto&output-format=auto&downsize=360:*", password: "abc123")
-james = User.create(name: "James", image: "https://i.insider.com/5adf938bbd967149008b46cb?width=750&format=jpeg&auto=webp", password: "abc123")
+srishti = User.create(name: "Srishti", image: "https://i.ytimg.com/vi/rydz_pgY57k/maxresdefault.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+caroline = User.create(name: "Caroline", image: "https://img1.looper.com/img/gallery/whatever-happened-to-meredith-from-the-office/intro-1526005235.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+eric = User.create(name: "Eric", image: "https://ca-times.brightspotcdn.com/dims4/default/d7d4d55/2147483647/strip/true/crop/750x422+0+0/resize/750x422!/quality/90/?url=https%3A%2F%2Fwww.trbimg.com%2Fimg-5436b8c6%2Fturbine%2Fzap-the-office-michaels-worst-moments-pics-012", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+jallen = User.create(name: "Jallen", image: "https://relevantmagazine.com/wp-content/uploads/2017/12/dwight.png", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+meghann = User.create(name: "Meghann", image: "https://img1.looper.com/img/gallery/why-jim-halpert-should-have-been-fired-from-dunder-mifflin/intro-1565380589.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+joseph = User.create(name: "Joseph", image: "https://img1.looper.com/img/gallery/the-reason-dwight-schrutes-office-spin-off-got-cancelled/intro-1565187393.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+jessica = User.create(name: "Jessica", image: "https://i.pinimg.com/originals/90/2e/48/902e48fe3e0a0397fc3071eed941332f.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+josh = User.create(name: "Josh", image: "https://i.pinimg.com/originals/79/54/65/795465e33d6c640c1997252905469984.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+rosie = User.create(name: "Rosie", image: "https://i.pinimg.com/originals/e5/67/cc/e567cc9331491412a1e53e83c7766a1a.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+don = User.create(name: "Don", image: "https://img.nbc.com/sites/nbcunbc/files/images/2013/11/12/oscar-500x500.jpg", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+alice = User.create(name: "Alice", image: "https://effectivenerd.com/wp-content/uploads/2019/05/Creed-Bratton-Quotes.png", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+sofia = User.create(name: "Sofia", image: "https://img.buzzfeed.com/buzzfeed-static/static/2020-01/22/22/asset/2262703cf38d/sub-buzz-1828-1579733623-9.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto&output-quality=auto&output-format=auto&downsize=360:*", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
+james = User.create(name: "James", image: "https://i.insider.com/5adf938bbd967149008b46cb?width=750&format=jpeg&auto=webp", password: "abc123", quote: Faker::TvShows::MichaelScott.quote)
 
 # clubs
 
