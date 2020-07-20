@@ -12,6 +12,7 @@ class ClubsController < ApplicationController
     
     def create
         club = Club.create(club_params)
+        club.book_clubs.create(book_id: Book.first.id, "active?": true)
         render json: club
     end
     

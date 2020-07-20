@@ -2,7 +2,7 @@ class UserClubsController < ApplicationController
     
     def create
         newEntry = UserClub.create(user_club_params)
-        render json: newEntry
+        render json: newEntry.user
     end
     
     def update
